@@ -1,25 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import 'aframe';
+import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const loader = new GLTFLoader();
+
+    return 
+
+        <a-scene>
+            <a-assets>
+            
+            </a-assets>
+        </a-sceneO>
 }
 
 export default App;
