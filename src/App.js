@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import 'aframe';
-import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
+import 'GLTFLoader' from 'three/examples/jsm/loaders/GLTFLoader';
+import solar from './one.jpg'
 
-function App() {
+function App() 
     const loader = new GLTFLoader();
 
     return 
@@ -13,6 +14,6 @@ function App() {
             
             </a-assets>
         </a-sceneO>
-}
+
 
 export default App;
