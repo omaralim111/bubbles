@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://\"node_modules/aes-js\":",
+            "request": "launch",
+            "url": "http://\"node_modules/aes-js\":"
+        }
+    ]
+}
