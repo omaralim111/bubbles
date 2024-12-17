@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import 'aframe';
-import 'GLTFLoader' from 'three/examples/jsm/loaders/GLTFLoader';
-import solar from './one.jpg'
+import 'GLTFLoader'; from './three/examples/jsm/loaders/GLTFLoader';
+import solar from './one.jpg';
 
 function App(){ 
   const loader = new GLTFLoader();
