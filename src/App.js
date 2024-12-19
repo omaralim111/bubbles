@@ -4,11 +4,13 @@ import 'aframe';
 import solar from './one.jpg';
 import beating from './Beatin on the door.mp3'
 
-function App(self){ 
+function App(){ 
   return (       
     <div>
       <header className='App-header'/>
+        <p>
         <image src="/one.jpg" alt=""/>
+        </p>
         <p>
         DONT <code>BE SHY </code>BUY 
         </p>  
