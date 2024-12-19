@@ -6,7 +6,8 @@ import beating from './Beatin on the door.mp3'
 
 function App(){ 
   return (       
-    <div>
+    <div className='App-header'>
+      <h3>Public Blockchain Music Distribution</h3>
       <header className='App-header'/>
         <h3>THE BEGINNING OF FOREVER</h3>
         <p>
