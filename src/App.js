@@ -8,9 +8,7 @@ function App(){
   return (       
     <div>
       <header className='App-header'/>
-        <p>
-        <image src="/one.jpg" alt=""/>
-        </p>
+        <h3>THE BEGINNING OF FOREVER</h3>
         <p>
         DONT <code>BE SHY </code>BUY 
         </p>  
