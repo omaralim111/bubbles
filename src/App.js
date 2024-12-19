@@ -5,7 +5,10 @@ import solar from './one.jpg';
 
 function App(){ 
   return (       
-    <div></div> 
+    <div>
+    
+    
+    </div> 
   );  
 }
 
