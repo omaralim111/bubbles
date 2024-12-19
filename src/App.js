@@ -7,13 +7,12 @@ import beating from './Beatin on the door.mp3'
 function App(self){ 
   return (       
     <div>
-      <header className='App-header'/> 
+      <header className='App-header'/>
+      <image src="/one.jpg" alt=""/> 
         <p>
         DONT <code>BE SHY </code>BUY   
         <p>      </p>
-        </p>
-        <image src="/one.jpg" alt=""/>
-         
+        </p>         
     </div> 
   );  
 }
