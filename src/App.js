@@ -14,7 +14,7 @@ function App(self){
     <div>
       <header className='App-header'/> 
         <p>
-        DONT <code>BE SHY </code>BUY  <button onClick={start}/>
+        DONT <code>BE SHY </code>BUY  <buttfon onClick={play}/>
         <p>      </p>
         </p>
         <image src="/one.jpg" alt=""/>
