@@ -9,7 +9,7 @@ function App(self){
     <div>
       <header className='App-header'/>
         <p>
-        <image src="/one.jpg" alt=""/> 
+        Dont <code>BE SHY</code>BUY 
         </p>  
         <p>
         DONT <code>BE SHY </code>BUY   
