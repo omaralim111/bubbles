@@ -4,14 +4,9 @@ import 'aframe';
 import solar from './one.jpg';
 
 function App(){ 
-  
-  return (
-    <a-scene>
-      <a-assets>
-      <a-assets>
-    <a-scene>
-       
-  )  
+  return (       
+    print (Omar is the shit)
+  );  
 }
 
 export default App;
