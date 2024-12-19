@@ -9,8 +9,9 @@ function App(self){
     <div>
       <header className='App-header'/>
         <p>
-        Dont <code>BE SHY </code>BUY 
+        DONT <code>BE SHY </code>BUY 
         </p>  
+      <header className='App-header'/>
         <p>
         DONT <code>BE SHY </code>BUY   
         <p>      </p>
