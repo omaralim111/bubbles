@@ -9,8 +9,7 @@ function App(){
     <a-scene>
       <a-assets>
       <a-assets>
-    <a-scene>
-       
+    <a-scene>       
   )  
 }
 
