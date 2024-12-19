@@ -7,6 +7,10 @@ function App(){
   return (       
     <div>
       <header className='App-header'/> 
+        <p>
+        DONT<code>BE SHY </code>BUY  
+        <p>      </p>
+        </p>
         <image src="/one.jpg" alt=""/>
          
     </div> 
