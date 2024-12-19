@@ -5,7 +5,7 @@ import solar from './one.jpg';
 
 function App(){ 
   return (       
-    print (Omar is the shit)
+    echo
   );  
 }
 
