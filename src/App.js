@@ -8,7 +8,6 @@ function App(self){
   self.play.Audio
   let audio = new Audio("/Beatin on the door.mp3")
   const start = {
-    audio,play
   }
   return (       
     <div>
