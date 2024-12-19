@@ -1,10 +1,10 @@
 import React from 'react';
-import video1 from '../assets/components/Movie on 12-19-24 at 12.59 AM.mov';
+import image1 from '../assets/pngegg.png'
+
 const Main = () => {
     return (
-        <div className='main'>
-            <video src= {video1} autoPlay />
-            <main/>
+        <div>
+          <image1 src={image1}/> 
         </div>
     )
 }
