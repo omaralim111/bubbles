@@ -8,7 +8,7 @@ function App(){
     <div>
       <header className='App-header'/> 
         <p>
-        DONT/n<code>BE SHY </code>BUY  
+        DONT <code>BE SHY </code>BUY  
         <p>      </p>
         </p>
         <image src="/one.jpg" alt=""/>
