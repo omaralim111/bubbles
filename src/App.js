@@ -9,7 +9,7 @@ function App(self){
     <div>
       <header className='App-header'/>
         <p>
-        Dont <code>BE SHY</code>BUY 
+        Dont <code>BE SHY </code>BUY 
         </p>  
         <p>
         DONT <code>BE SHY </code>BUY   
