@@ -7,7 +7,7 @@ import beating from './Beatin on the door.mp3'
 function App(){ 
   let audio = new Audio("/Beatin on the door.mp3")
   const start = {
-    audio,play
+    audio: play
   }
   return (       
     <div>
