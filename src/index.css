@@ -17,3 +17,18 @@ code {
   margin: 0;
   position: absolute;  
 }
+
+.overlay{
+  position:absolute;
+  background-color: rgba(#010000cc);
+  top: 0;
+  left: 0;
+  width: 500;
+  background-color: rgba(0,0 0,.4);
+}
+
+.image {
+  position: relative;
+  height: 100vh;
+}
+

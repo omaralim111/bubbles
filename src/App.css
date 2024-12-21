@@ -2,9 +2,12 @@
   text-align: center;
 }
 
-.App-video {
+.App-image {
   color: rgb(240, 3, 3);
   min-height: 50vh;
+  position: absolute;
+  background-color: rgba(0,0 0,.4);
+  
 }
 
 .App-header {
@@ -14,7 +17,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(148, 136, 136);
+  color: rgb(215, 123, 123);
 }
 
 .App-link {
