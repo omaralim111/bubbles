@@ -17,11 +17,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(215, 123, 123);
+  color: rgba(215, 123, 123);
 }
 
-.App-link {
-  color: #61dafb;
-}
+
 
 

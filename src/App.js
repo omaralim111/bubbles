@@ -1,31 +1,21 @@
 import React from 'react';
 import './App.css';
 import 'aframe';
-
-
+import bal from '../src/bal.mp4'
+import { ClerkProvider, SignInWithMetamaskButton, SignIn, SignedOut } from '@clerk/clerk-react';
 
 function App(){ 
-  return (       
-    
-    <div className='App-header'>    
-      <h3>Blockchain Public Music Distribution</h3>
-      <h3>TOKEN NATION</h3>
-      <h3>THE BEGINNING OF FOREVER</h3>
-      <p>      
-      </p>
-      <header/> 
-      <div className='App-image'>
-        STAY FOCUSED O
-      </div>
-       <p>
-        DONT <code>BE SHY </code>BUY 
-        </p>  
-      <header className='App-image'/>
-        <p>
-        DONT <code>BE SHY </code>BUY   
-        <p>      </p>
-        </p>         
-    </div> 
+  return (    
+    <div className='main'>
+        <video src={bal} autoPlay loop muted />
+        <div className='overlay'></div>
+        <div className='content'>
+          <h1>Block Chain Content</h1>
+          <p>Art
+            Officially
+            Intelligent</p>
+        </div>
+      </div> 
   );  
 }
 

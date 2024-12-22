@@ -1,13 +1,15 @@
 import React from 'react';
-import balance from '../../public/bal.mp4'
+import bal from '../../src/bal.mp4'
 
 
 const Main = () => {
     return (
-        <div>
-          <Main/>
+        <div className='main'>
+            <div className='overlay'>
+            <video src={bal} alt=""/>             
+            <div className='content'></div>
+        </div>
         </div>
     )
 }
-
 export default Main
