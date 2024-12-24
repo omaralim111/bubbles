@@ -37,3 +37,14 @@ video {
   height: 100%;
   color:rgba(0.0.0.4);
 }
+
+.button{
+  position: sticky;
+  color: red;
+  font-family: fantasy;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 7%;
+  height: 8%;
+}

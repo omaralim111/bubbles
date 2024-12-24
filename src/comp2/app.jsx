@@ -2,6 +2,7 @@ import React from 'react';
 import bal from '../../src/bal.mp4'
 
 
+
 const Main = () => {
     return (
         <div className='main'>

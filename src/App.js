@@ -2,9 +2,12 @@ import React from 'react';
 import './App.css';
 import 'aframe';
 import bal from '../src/bal.mp4'
-import { ClerkProvider, SignInWithMetamaskButton, SignIn, SignedOut } from '@clerk/clerk-react';
+import { ClerkProvider, SignIn, SignInWithMetamaskButton, SignedOut } from '@clerk/clerk-react';
 
-function App(){ 
+
+
+
+function App(){   
   return (    
     <div className='main'>
         <video src={bal} autoPlay loop muted />
@@ -14,6 +17,15 @@ function App(){
           <p>Art
             Officially
             Intelligent</p>
+          <ClerkProvider publishableKey='pk_test_aWRlYWwtYmFzcy00Mi5jbGVyay5hY2NvdW50cy5kZXYk'> sign in 
+            <SignIn>
+                <p>signed in</p>
+            </SignIn>
+            <SignedOut>
+                <SignInWithMetamaskButton/>
+            </SignedOut>
+          
+          </ClerkProvider>
         </div>
       </div> 
   );  
