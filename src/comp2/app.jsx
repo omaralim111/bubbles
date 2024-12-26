@@ -5,11 +5,10 @@ import bal from '../../src/bal.mp4'
 
 const Main = () => {
     return (
-        <div className='main'>
-            <div className='overlay'>
+        <div className='Main'>
+            <div className='content'>
             <video src={bal} alt=""/>             
-            <div className='content'></div>
-        </div>
+            </div>
         </div>
     )
 }
