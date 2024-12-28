@@ -49,24 +49,20 @@ video {
 }
 
 .parent {
-  max-width: 100%;
-  width: 100%;
-}
-
-.parent .child {
+  max-width: 25%;
   width: 50%;
 }
 
+.parent .child {
+  width: 30%;
+}
+
 .child1 video{
-  width: 100%;
+  width: 50%;
+  
 }
 
 .child2 {
-  position: absolute;
-  padding: 0;
-  width: -50%;
-  height: 10%;
-
-  position: relative;
-  top: -40%; left: 900px;
+  width: 25%;;
+  
 }
