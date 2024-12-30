@@ -35,6 +35,22 @@ video {
   color: white;
 }
 
+.contentv{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  color: rgb(216, 202, 202);
+}
+
+.overlayv{
+  position: absolute;
+  color:rgba(0.0.0.3);
+}
+
 .overlay{
   position: absolute;
   width: 100%;
@@ -45,7 +61,12 @@ video {
 
 .ep1{
   position: relative;
-  top: -90%; left: 100px;
+  top: -48.5%; left: 100px;
+}
+
+.page-break {
+  page-break-after: always;
+  top: 28.5%; left: 100px;
 }
 
 .parent {

@@ -14,6 +14,7 @@ function App( ){
   }
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(bal);
+  const videoRef1 = useRef(out);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -31,30 +32,22 @@ function App( ){
       <div className='Main'>
           <video src={bal} autoPlay loop muted />   
             <div className='overlay'/>
+            <h1 className='page-break'>  The National Token Initiative</h1>
               <h1 className='content'>
-                Block Chain Concepts
+                PROJECT TOKEN 2025
               </h1>
+              <page-break></page-break>
+              <h1 className='page-break'>  The National Token Initiative</h1>
                 
-               <div className='ep1'> <button onClick={()=> setIsPlaying(!isPlaying)}>
-                {isPlaying ? 'pause' : 'play'}
-              </button>
-              <h3>
-
-              
-              </h3>
-              <div class="parent">
-              <div class="child1">
-              <button onClick={video}/>
-              <video src={bal}></video>
-                <p> Balance </p>
-
-              </div>
-              <div className='child2'></div>
-              <div class="videos"></div>
-              <video src={out}></video>
-              <button onClick={out.play}/>
-              <p> Beating on the door </p>
-              </div>
+            <div className='ep1'> 
+            <div className='contentv'/>
+            <div class="parent">
+            <div class="child1"></div>
+            <div className='child2'></div>
+            <div class="videos"></div>
+            <video src={bal}onPlay={()=> videoRef1(!isPlaying())}></video>
+             
+            </div>
             <div>
               
               
