@@ -3,32 +3,33 @@ import 'aframe';
 import bal from '../src/bal.mp4';
 import { ClerkProvider, SignIn, SignedOut, SignOutButton } from '@clerk/clerk-react';
 import React, { useState, useRef, useEffect} from 'react';
-import out from '../src/out.mp4';
 import blue from './blue.mp4'
 
 
 
 
+
 function App( ){   
-  const video = () => {
-    video.play()
-  }
+  
   const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef(bal);
-  const videoRef1 = useRef(out);
+  const videoRef = useRef(null);
 
-  useEffect(() => {
-    const video = videoRef.current;
 
-    const handlePlay = () =>{
-      video.handlePlay()
-    };
+  
+
+
+  const handlePlay = () => {
     if (isPlaying) {
-      handlePlay();
-    }
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    };
     
-  }
-  )
+    
+  
+  
   return (    
       <div className='Main'>
           <video src={blue} autoPlay loop muted />   
@@ -44,7 +45,7 @@ function App( ){
             <div class="child1"></div>
             <div className='child2'></div>
             <div class="videos"></div>
-            <video src={bal}onPlay={()=> videoRef1(!isPlaying())}></video>
+            <video src={bal} ref={videoRef} controls></video>
              
             </div>
             <div>

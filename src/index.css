@@ -61,7 +61,7 @@ video {
 
 .ep1{
   position: relative;
-  top: -46.5%; left: 50px;
+  top: -60.5%; left: 50px;
 }
 
 .page-break {
@@ -69,6 +69,8 @@ video {
   position: relative;
   top: -90.5%; left: 100px;
   color: antiquewhite;
+  display: flex;
+  flex-direction: inherit;
 }
 
 .parent {
