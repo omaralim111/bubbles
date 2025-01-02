@@ -1,23 +1,25 @@
 import './App.css';
+import './index.css'
 import 'aframe';
 import bal from '../src/bal.mp4';
-import { ClerkProvider, SignIn, SignedOut, SignOutButton } from '@clerk/clerk-react';
 import React, { useState, useRef, useEffect} from 'react';
 import blue from './blue.mp4'
+import { Wallet, ethers } from 'ethers';
 
 
 
 
 
-function App( ){   
+
+
+function App( ){  
+  const [account, setAccount] = useState(null);
+  const [provider, setProvider] = useState (null);
+
   
-  const [isPlaying, setIsPlaying] = useState(false);
+  
+  const [isPlaying, setIsPlaying] = useState(null);
   const videoRef = useRef(null);
-
-
-  
-
-
   const handlePlay = () => {
     if (isPlaying) {
         videoRef.current.pause();
@@ -25,10 +27,26 @@ function App( ){
         videoRef.current.play();
       }
       setIsPlaying(!isPlaying);
-    };
-    
-    
-  
+    }; 
+
+  const connectWallet = async(accountData) => {
+    if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
+      try {
+        const accounts = await window.ethereum.request({ 
+          method: "eth_requestAccounts", 
+          params: []
+        });
+        const account = accounts[0];
+        console.log('Account:',account);
+        setAccount(accountData);
+        setProvider(provider); 
+      } catch(err) {
+        console.error(err.message);
+      }
+    } else {
+      console.log("Please Install MetaMask");
+    }
+    } 
   
   return (    
       <div className='Main'>
@@ -45,15 +63,18 @@ function App( ){
             <div class="child1"></div>
             <div className='child2'></div>
             <div class="videos"></div>
-            <video src={bal} ref={videoRef} controls></video>
-             
-            </div>
+            <video src={bal} ref={videoRef} controls></video> 
             <div>
-              
-              
-              
-            
-            
+              {account ? (
+                <p>welcome, {account.username}!</p>
+              ):(
+                <button onClick={connectWallet}>dont be shy, BUY</button>
+              )}
+              </div>  
+            <div>   
+            </div>
+            </div>
+            <div>   
             </div>
         </div>
         </div>        
