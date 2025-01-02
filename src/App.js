@@ -46,19 +46,19 @@ function App( ){
     } else {
       console.log("Please Install MetaMask");
     }
-    } 
+  } 
   
   return (    
       <div className='Main'>
           <video src={blue} autoPlay loop muted />   
             <div className='overlay'/>
-              <h1 className='page-break'>  The National Token Initiative</h1>
+              <h1 className='page-break'>The National Token Initiative</h1>
               <h1 className='content'>
                 PROJECT TOKEN 2025
               </h1>
               <page-break></page-break>          
             <div className='ep1'> 
-            <div className='contentv'/>
+            <div className='parent'/>
             <div class="parent">
             <div class="child1"></div>
             <div className='child2'></div>
@@ -68,7 +68,7 @@ function App( ){
               {account ? (
                 <p>welcome, {account.username}!</p>
               ):(
-                <button onClick={connectWallet}>dont be shy, BUY</button>
+                <button onClick={connectWallet}>WATCH VIDEO</button>
               )}
               </div>  
             <div>   

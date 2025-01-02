@@ -19,7 +19,6 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
 .content {
@@ -67,10 +66,12 @@ video {
 .page-break {
   page-break-after: always;
   position: relative;
-  top: -90.5%; left: 100px;
+  top: -100.5%; left: 60%px;
   color: antiquewhite;
   display: flex;
-  flex-direction: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .parent {
@@ -88,7 +89,7 @@ video {
 }
 
 .child2 {
-  width: 25%;;
+  width: 45%;
   
 }
 
