@@ -1,12 +1,12 @@
 import React from 'react';
-import bal from '../../src/bal.mp4'
+import blue from '../../src/blue.mp4'
 
 
 
 const Main = () => {
     return (
         <div className='video'>
-            <video src={bal} alt=""/>            
+            <video src={blue} alt=""/>            
         </div>
     );
 }

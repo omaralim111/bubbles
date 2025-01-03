@@ -3,7 +3,8 @@ import 'aframe';
 import bal from '../src/bal.mp4';
 import { ClerkProvider, SignIn, SignedOut, SignOutButton } from '@clerk/clerk-react';
 import React, { useState, useRef, useEffect} from 'react';
-import out from '../src/out.mp4'
+import out from '../src/out.mp4';
+import blue from './blue.mp4'
 
 
 
@@ -20,7 +21,7 @@ function App( ){
     const video = videoRef.current;
 
     const handlePlay = () =>{
-      video.play()
+      video.handlePlay()
     };
     if (isPlaying) {
       handlePlay();
@@ -30,15 +31,13 @@ function App( ){
   )
   return (    
       <div className='Main'>
-          <video src={bal} autoPlay loop muted />   
+          <video src={blue} autoPlay loop muted />   
             <div className='overlay'/>
-            <h1 className='page-break'>  The National Token Initiative</h1>
+              <h1 className='page-break'>  The National Token Initiative</h1>
               <h1 className='content'>
                 PROJECT TOKEN 2025
               </h1>
-              <page-break></page-break>
-              <h1 className='page-break'>  The National Token Initiative</h1>
-                
+              <page-break></page-break>          
             <div className='ep1'> 
             <div className='contentv'/>
             <div class="parent">
